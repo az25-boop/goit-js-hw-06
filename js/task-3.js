@@ -22,6 +22,7 @@ class StringBuilder {
 }
 
 const builder = new StringBuilder("Hello");
+
 console.log(builder.getValue()); // "Hello"
 builder.padEnd(", World!");
 console.log(builder.getValue()); // "Hello, World!"
