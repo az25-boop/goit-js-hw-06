@@ -21,12 +21,12 @@ class StringBuilder {
   }
 }
 
-const builder = new StringBuilder("Hello");
+const builder = new StringBuilder(".");
 
-console.log(builder.getValue()); // "Hello"
-builder.padEnd(", World!");
-console.log(builder.getValue()); // "Hello, World!"
-builder.padStart("Hey, ");
-console.log(builder.getValue()); // "Hey, Hello, World!"
-builder.padBoth("***");
-console.log(builder.getValue()); // "***Hey, Hello, World!***"
+console.log(builder.getValue()); // .
+builder.padStart("^");
+console.log(builder.getValue()); // ^.
+builder.padEnd("^");
+console.log(builder.getValue()); // ^.^
+builder.padBoth("=");
+console.log(builder.getValue()); // =^.^=
